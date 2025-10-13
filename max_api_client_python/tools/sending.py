@@ -1,6 +1,6 @@
 import mimetypes
 import pathlib
-from typing import Dict, List, Optional, TYPE_CHECKING, Union
+from typing import Optional, TYPE_CHECKING
 
 from ..response import Response
 
