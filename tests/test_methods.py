@@ -19,7 +19,6 @@ class MethodsTestCase(unittest.TestCase):
 
         methods = [
             *self.account_methods,
-            *self.device_methods,
             *self.group_methods,
             *self.status_methods,
             *self.log_methods,
@@ -47,10 +46,6 @@ class MethodsTestCase(unittest.TestCase):
             api.account.logout(),
             api.account.setProfilePicture(path)
         ]
-
-    @property
-    def device_methods(self) -> typing.List[Response]:
-        return [api.device.getDeviceInfo()]
 
     @property
     def group_methods(self) -> typing.List[Response]:
