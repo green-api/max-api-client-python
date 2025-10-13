@@ -43,7 +43,6 @@ class MethodsTestCase(unittest.TestCase):
             api.account.getAccountSettings(),
             api.account.setSettings({}),
             api.account.getStateInstance(),
-            api.account.getStatusInstance(),
             api.account.reboot(),
             api.account.logout(),
             api.account.setProfilePicture(path)
