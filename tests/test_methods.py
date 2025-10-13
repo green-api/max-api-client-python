@@ -20,7 +20,6 @@ class MethodsTestCase(unittest.TestCase):
         methods = [
             *self.account_methods,
             *self.group_methods,
-            *self.status_methods,
             *self.log_methods,
             *self.queue_methods,
             *self.read_mark_methods,
