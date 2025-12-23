@@ -94,6 +94,19 @@ class Account:
             )
         )
 
+    def qr(self) -> Response:
+        """
+        The method is aimed for getting QR code.
+
+        https://green-api.com/en/docs/api/account/QR/
+        """
+
+        return self.api.request(
+            "GET", (
+                "{{host}}/waInstance{{idInstance}}/qr/{{apiTokenInstance}}"
+            )
+        )
+    
     def setProfilePicture(self, path: str) -> Response:
         """
         The method is aimed for setting an account picture.
@@ -113,6 +126,8 @@ class Account:
 
     def startAuthorization(self, phoneNumber: int) -> Response:
         """
+        The method is deprecated. Please use QR.
+
         The method is designed to receive SMS for instance authorization.
 
         https://green-api.com/v3/docs/api/account/StartAuthorization/
@@ -130,6 +145,8 @@ class Account:
 
     def sendAuthorizationCode(self, code: str) -> Response:
         """
+        The method is deprecated. Please use QR.
+        
         The method is designed to authorize an instance by SMS.
 
         https://green-api.com/v3/docs/api/account/SendAuthorizationCode/
