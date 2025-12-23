@@ -5,7 +5,7 @@ with open("README.md", encoding="UTF-8") as file:
 
 setup(
     name="max-api-client-python",
-    version="1.0.0",
+    version="1.0.1",
     description=(
         "This library helps you easily create"
         " a Python application with MAX API."
